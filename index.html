@@ -7,8 +7,67 @@
     <script src="js/p5-js/p5.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/Circle.js"></script>
+
+    <!-- font-awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+          crossorigin="anonymous">
+    
+    <style>
+        body{
+            overflow: hidden;
+            background-color: #13001c;
+            margin:0;
+            padding: 0;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        #menu{
+            margin-left: 10px;
+            color: #fff;
+        }
+        #completed{
+            color: #fff;
+        }
+        .button{
+            height: 30px;
+            border-radius: 10px;
+            border: solid black 1px;
+        }
+        #reset, #loading, #completed, #error{
+            display: none;
+        }
+        
+    </style>
 </head>
 <body>
+
+    <div id="menu">
+        <div>
+            <div>Enter number (0~100) to search</div>
+            <input id="input" type="number" value="0"/>
+            <button id="search" class="button" onclick="search()">
+                <i class="fas fa-search"></i> Search
+            </button>
+
+            <p id="loading"><i  class="fa fa-spinner fa-spin"></i> Searching</p>
+            <p id="completed">
+                Founded!!!
+            </p>
+            <p id="error">
+                Sorry, that number is not in range.
+            </p>
+            <button id="reset" class="button" onclick="reset()">
+                <i class="fas fa-redo"></i> Reset
+            </button>
+        </div>
+
+
+    </div>
 
 </body>
 </html>
