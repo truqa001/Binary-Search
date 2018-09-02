@@ -15,18 +15,11 @@ function setup() {
     array = new Array();
     start_search = false;
 
+
     for (var i=0;i<=100;i++){
         let x = random(0, window.innerWidth);
         let y = random(0, window.innerHeight);
-        let circle;
-
-        if (window.outerWidth<=450){
-
-            circle= new Circle(i, x, y, 30, 30);
-        }else{
-            circle= new Circle(i, x, y, 70, 70);
-        }
-
+        let circle= new Circle(i, x, y);
         array.push(circle);
     }
 

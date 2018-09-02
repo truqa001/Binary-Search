@@ -1,13 +1,12 @@
 class Circle{
-    constructor(value, CIRCLE_X, CIRCLE_Y, CIRCLE_WIDTH, CIRCLE_HEIGHT){
+    constructor(value, CIRCLE_X, CIRCLE_Y){
     this.value = value;
 
     this.CIRCLE_X = CIRCLE_X;
     this.CIRCLE_Y = CIRCLE_Y;
 
-    this.CIRCLE_WIDTH = CIRCLE_WIDTH;
-    this.CIRCLE_HEIGHT = CIRCLE_HEIGHT;
-
+    this.CIRCLE_WIDTH = 70;
+    this.CIRCLE_HEIGHT = 70;
     }
 
     drawCircle(){
