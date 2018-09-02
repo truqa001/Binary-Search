@@ -25,6 +25,9 @@
             -webkit-appearance: none;
             margin: 0;
         }
+        input{
+            height: 25px;
+        }
 
         #menu{
             margin-left: 10px;
@@ -54,13 +57,13 @@
                 <i class="fas fa-search"></i> Search
             </button>
 
-            <p id="loading"><i  class="fa fa-spinner fa-spin"></i> Searching</p>
-            <p id="completed">
-                Found!!!
-            </p>
-            <p id="error">
+            <span id="loading"><i  class="fa fa-spinner fa-spin"></i> Searching</span>
+            <span id="completed">
+                BINGO !!!
+            </span>
+            <span id="error">
                 Sorry, that number is not in range.
-            </p>
+            </span>
             <button id="reset" class="button" onclick="reset()">
                 <i class="fas fa-redo"></i> Reset
             </button>
