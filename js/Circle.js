@@ -5,7 +5,7 @@ class Circle{
     this.CIRCLE_X = CIRCLE_X;
     this.CIRCLE_Y = CIRCLE_Y;
 
-    if (SCREEN_WIDTH<400){
+    if (SCREEN_WIDTH<=600){
         this.CIRCLE_WIDTH = 50;
         this.CIRCLE_HEIGHT = 50;
     }else{
