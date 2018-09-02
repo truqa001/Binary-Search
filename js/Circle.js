@@ -5,8 +5,8 @@ class Circle{
     this.CIRCLE_X = CIRCLE_X;
     this.CIRCLE_Y = CIRCLE_Y;
 
-    this.CIRCLE_WIDTH = 70;
-    this.CIRCLE_HEIGHT = 70;
+    this.CIRCLE_WIDTH = 60;
+    this.CIRCLE_HEIGHT = 60;
     }
 
     drawCircle(){
