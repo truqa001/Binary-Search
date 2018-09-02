@@ -1,12 +1,18 @@
 class Circle{
-    constructor(value, CIRCLE_X, CIRCLE_Y){
+    constructor(value, CIRCLE_X, CIRCLE_Y, SCREEN_WIDTH){
     this.value = value;
 
     this.CIRCLE_X = CIRCLE_X;
     this.CIRCLE_Y = CIRCLE_Y;
 
-    this.CIRCLE_WIDTH = 70;
-    this.CIRCLE_HEIGHT = 70;
+    if (SCREEN_WIDTH<400){
+        this.CIRCLE_WIDTH = 50;
+        this.CIRCLE_HEIGHT = 50;
+    }else{
+        this.CIRCLE_WIDTH = 70;
+        this.CIRCLE_HEIGHT = 70;
+    }
+
     }
 
     drawCircle(){

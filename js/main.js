@@ -19,7 +19,7 @@ function setup() {
     for (var i=0;i<=100;i++){
         let x = random(0, window.innerWidth);
         let y = random(0, window.innerHeight);
-        let circle= new Circle(i, x, y);
+        let circle= new Circle(i, x, y, width);
         array.push(circle);
     }
 
