@@ -6,9 +6,9 @@ let left_index;
 let right_index;
 let mid_index;
 let start_search;
-let CIRCLE_WIDTH;
-let CIRCLE_HEIGHT;
-const BOARD_HEIGHT = 70;
+const CIRCLE_WIDTH = 50;
+const CIRCLE_HEIGHT = 50;
+const BOARD_HEIGHT = 100;
 
 
 
@@ -20,13 +20,6 @@ function setup() {
     start_search = false;
 
     print(height);
-    if (width <=500){
-        CIRCLE_WIDTH = 50;
-        CIRCLE_HEIGHT = 50;
-    }else{
-        CIRCLE_WIDTH = 70;
-        CIRCLE_HEIGHT = 70;
-    }
 
     for (var i=0;i<=100;i++){
         let x = random(CIRCLE_WIDTH/2, width-CIRCLE_WIDTH/2);
