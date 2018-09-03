@@ -29,7 +29,7 @@ function setup() {
 
     for (var i=0;i<=100;i++){
         let x = random(CIRCLE_WIDTH/2, width-CIRCLE_WIDTH/2);
-        let y = random(CIRCLE_HEIGHT, window.innerHeight-CIRCLE_HEIGHT-50);
+        let y = random(CIRCLE_HEIGHT/2, window.innerHeight-CIRCLE_HEIGHT/2);
 
         let circle= new Circle(i, x, y, CIRCLE_WIDTH, CIRCLE_HEIGHT);
         array.push(circle);
