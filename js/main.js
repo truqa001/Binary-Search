@@ -8,7 +8,7 @@ let mid_index;
 let start_search;
 let CIRCLE_WIDTH;
 let CIRCLE_HEIGHT;
-const BOARD_HEIGHT = 50;
+const BOARD_HEIGHT = 70;
 
 
 
