@@ -6,6 +6,9 @@ let left_index;
 let right_index;
 let mid_index;
 let start_search;
+let CIRCLE_WIDTH;
+let CIRCLE_HEIGHT;
+
 
 
 function setup() {
@@ -15,11 +18,19 @@ function setup() {
     array = new Array();
     start_search = false;
 
+    if (width <=500){
+        CIRCLE_WIDTH = 50;
+        CIRCLE_HEIGHT = 50;
+    }else{
+        CIRCLE_WIDTH = 70;
+        CIRCLE_HEIGHT = 70;
+    }
 
     for (var i=0;i<=100;i++){
-        let x = random(0, window.innerWidth);
-        let y = random(0, window.innerHeight);
-        let circle= new Circle(i, x, y);
+        let x = random(CIRCLE_WIDTH, width-CIRCLE_WIDTH);
+        let y = random(CIRCLE_HEIGHT, height-CIRCLE_HEIGHT);
+
+        let circle= new Circle(i, x, y, CIRCLE_WIDTH, CIRCLE_HEIGHT);
         array.push(circle);
     }
 
