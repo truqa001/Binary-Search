@@ -18,8 +18,7 @@ function setup() {
 
     array = new Array();
     start_search = false;
-
-    print(height);
+    
 
     for (var i=0;i<=100;i++){
         let x = random(CIRCLE_WIDTH/2, width-CIRCLE_WIDTH/2);
